@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Music</string>
+    <string name="btn_xao_tron">Xáo trộn</string>
+    <string name="btn_yeu_thich">Yêu thích</string>
+    <string name="btn_danh_sach_phat">Danh sách phát</string>
+    <string name="tong_bai_hat_tim_duoc">Tổng bài hát</string>
+    <string name="the_gioi_am_nhac">Thế giới âm nhạc</string>
+    <string name="Ten_bai_hat">Tên bài hát</string>
+    <string name="btn_back">Back</string>
+    <string name="start_tv">00:00</string>
+    <string name="end_tv">Loading...</string>
+    <string name="btn_lap_lai">Lặp lại</string>
+    <string name="btn_equalizer">Cân bằng</string>
+    <string name="btn_timer">Hẹn giờ</string>
+    <string name="btn_share">Chia sẻ</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="icon_app">Icon</string>
+    <string name="text_nav">Welcome to Music</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="setting">Cài đặt</string>
+    <string name="about">Thông tin</string>
+    <string name="exit">Thoát</string>
+    <string name="album_bai_hat">Tên album</string>
+</resources>
