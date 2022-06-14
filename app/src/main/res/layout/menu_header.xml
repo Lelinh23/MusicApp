@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="170dp"
     android:padding="16dp"
-    android:background="#E683F7"
+    android:id="@+id/linearLayoutNav"
+    android:background="?attr/themeColor"
     android:orientation="vertical">
 
     <ImageView
@@ -22,5 +23,4 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
-
 </LinearLayout>

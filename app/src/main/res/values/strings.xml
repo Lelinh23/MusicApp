@@ -4,11 +4,11 @@
     <string name="btn_yeu_thich">Yêu thích</string>
     <string name="btn_danh_sach_phat">Danh sách phát</string>
     <string name="tong_bai_hat_tim_duoc">Tổng bài hát</string>
-    <string name="the_gioi_am_nhac">Thế giới âm nhạc</string>
+    <string name="the_gioi_am_nhac">Music</string>
     <string name="Ten_bai_hat">Tên bài hát</string>
     <string name="btn_back">Back</string>
     <string name="start_tv">00:00</string>
-    <string name="end_tv">Loading...</string>
+    <string name="end_tv">Loading…</string>
     <string name="btn_lap_lai">Lặp lại</string>
     <string name="btn_equalizer">Cân bằng</string>
     <string name="btn_timer">Hẹn giờ</string>
@@ -22,4 +22,22 @@
     <string name="about">Thông tin</string>
     <string name="exit">Thoát</string>
     <string name="album_bai_hat">Tên album</string>
+    <string name="seach_view">Tìm kiếm</string>
+    <string name="anhBH">ảnh bài hát</string>
+    <string name="ten_play_list">Tên danh sách phát</string>
+    <string name="xoa_danh_sach_phat">Xóa danh sách phát</string>
+    <string name="uer_name">Tên người dùng</string>
+    <string name="min_15">15 phút</string>
+    <string name="min_30">30 phút</string>
+    <string name="min_60">1 tiếng</string>
+    <string name="add_Bh">Thêm bài hát</string>
+    <string name="xoa_Bh">Xóa bài hát</string>
+    <string name="search_song">Tìm bài hát</string>
+    <string name="topic_han_hoi">Chủ đề </string>
+    <string name="email_phan_hoi">Địa chỉ Email người nhận</string>
+    <string name="ndfeedback">Nội dung cần hỏi</string>
+    <string name="send">Gửi</string>
+    <string name="set_them">Cài đặt màn hình</string>
+    <string name="sap_xep">Sắp sếp</string>
+    <string name="version_name">Version App</string>
 </resources>

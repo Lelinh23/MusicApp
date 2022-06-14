@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="?attr/themeColor"
+    android:layout_margin="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anh_playList"
+        android:layout_width="181dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/anhBH"
+        android:src="@drawable/man_hinh_screen"
+        app:shapeAppearanceOverlay="@style/curved" />
+
+    <TextView
+        android:id="@+id/ten_playList"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:text="@string/ten_play_list"
+        android:textColor="@color/black"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/ten_play_list"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"/>
+
+    <ImageButton
+        android:id="@+id/btn_xoa_playList"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/xoa_danh_sach_phat"
+        android:src="@drawable/icon_delete"
+        app:tint="?attr/themeColor"/>
+</com.google.android.material.card.MaterialCardView>
