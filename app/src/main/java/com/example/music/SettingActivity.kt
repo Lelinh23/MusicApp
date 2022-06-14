@@ -30,6 +30,23 @@ class SettingActivity : AppCompatActivity() {
         binding.themDo.setOnClickListener { saveTheme(3) }
         binding.themVang.setOnClickListener { saveTheme(4) }
         binding.versionName.text = setVersion()
+        binding.btnSort.setOnClickListener {
+            val menuList = arrayOf("Cập nhật mới nhất","Theo tên bài hát","Theo dung lượng")
+            var currentSort = MainActivity.sortOrder
+            val builder = MaterialAlertDialogBuilder(this)
+            builder.setTitle("Sắp xếp")
+                .setPositiveButton("OK"){_, _ ->
+                    val editor = getSharedPreferences("Sắp xếp", MODE_PRIVATE).edit()
+                    editor.putInt("sortOrder", currentSort)
+                    editor.apply()
+                }
+                .setSingleChoiceItems(menuList, currentSort){_,which->
+                    currentSort = which
+                }
+            val customDialog = builder.create()
+            customDialog.show()
+            customDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(Color.RED)
+        }
     }
 
     private fun saveTheme(index: Int){

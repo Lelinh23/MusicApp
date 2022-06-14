@@ -112,7 +112,8 @@
             android:drawableTop="@drawable/icon_add"
             android:text="@string/add_Bh"
             android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded"/>
 
         <Button
             android:id="@+id/xoaBh"
@@ -124,7 +125,8 @@
             android:drawableTop="@drawable/icon_xoa_bh"
             android:text="@string/xoa_Bh"
             android:textAllCaps="false"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            tools:ignore="RtlHardcoded"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

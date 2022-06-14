@@ -29,8 +29,11 @@ class ChiTietDanhSachPhat : AppCompatActivity() {
         binding = ActivityChiTietDanhSachPhatBinding.inflate(layoutInflater)
         setContentView(binding.root)
         currentPlaylistPos = intent.extras?.get("index") as Int
-        DanhSachNhacActivity.DanhSachBH.ref[currentPlaylistPos].playlist =
-            checkDataDSN(DSN = DanhSachNhacActivity.DanhSachBH.ref[currentPlaylistPos].playlist)
+        try {
+            DanhSachNhacActivity.DanhSachBH.ref[currentPlaylistPos].playlist =
+                checkDataDSN(DSN = DanhSachNhacActivity.DanhSachBH.ref[currentPlaylistPos].playlist)
+        }
+        catch (e: Exception){}
         binding.chiTietDanhSach.setItemViewCacheSize(10)
         binding.chiTietDanhSach.setHasFixedSize(true)
         binding.chiTietDanhSach.layoutManager = LinearLayoutManager(this)

@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         var currrenGradient = arrayOf(R.drawable.gradient_tim_hong, R.drawable.gradient_blue,
             R.drawable.gradient_den, R.drawable.gradient_do, R.drawable.gradient_vang)
         var sortOrder: Int = 0
-        val sort
     }
 
     @SuppressLint("CommitPrefEdits")
@@ -155,6 +154,8 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.R)
     private fun KhoiTaoBoCuc(): DrawerLayout {
         timkiem = false
+        val sortEditor = getSharedPreferences("Sắp xếp", MODE_PRIVATE)
+        sortOrder = sortEditor.getInt("sortOrder", 0)
         MusicListMA = getAllAudio()
         binding.musicRV.setHasFixedSize(true)
         binding.musicRV.setItemViewCacheSize(13)
@@ -215,6 +216,13 @@ class MainActivity : AppCompatActivity() {
         editor.putString("DanhSachBH", jsonStringDS)
         editor.apply()
         //for sorting
+        val sortEditor = getSharedPreferences("Sắp xếp", MODE_PRIVATE)
+        val sortValue = sortEditor.getInt("sortOrder", 0)
+        if (sortOrder != sortValue){
+            sortOrder = sortValue
+            MusicListMA = getAllAudio()
+            musicAdapter.updateDanhSachNhac(MusicListMA)
+        }
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.seach_view, menu)
