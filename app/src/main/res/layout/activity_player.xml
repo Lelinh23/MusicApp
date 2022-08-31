@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/btn_back"
+            android:src="@drawable/icon_back"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/the_gioi_am_nhac"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="NestedWeights" />
+
+        <ImageButton
+            android:id="@+id/btn_yeu_thich_PA"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/btn_yeu_thich"
+            android:src="@drawable/icon_chua_thich"
+            android:backgroundTint="@android:color/transparent"
+            app:tint="@android:color/holo_red_dark"
+            android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anhBH_pa"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:src="@drawable/nhac"
+        app:shapeAppearanceOverlay="@style/do_cong"
+        app:strokeColor="?attr/themeColor"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/nameBH_pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/Ten_bai_hat"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_BH_truoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:icon="@drawable/icon_bai_hat_truoc"
+            app:iconSize="40dp"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btnPhatBH_pa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:icon="@drawable/icon_dung_bai_hat"
+            app:iconSize="65dp"
+            app:iconTint="@color/black" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/btn_BH_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:icon="@drawable/icon_bai_hat_next"
+            app:iconSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvSeekBarStart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/start_tv"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/tvSeekBarEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/end_tv"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/btnLapLai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/btn_lap_lai"
+            android:src="@drawable/icon_lap_lai"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+        <ImageButton
+            android:id="@+id/btn_can_bang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/btn_equalizer"
+            android:src="@drawable/icon_equalizer"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/btn_share"
+            android:src="@drawable/icon_share"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btn_hen_gio_tat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/btn_timer"
+            android:src="@drawable/icon_hen_gio"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

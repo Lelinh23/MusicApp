@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:layout_marginBottom="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anhMV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/nhac"
+        app:shapeAppearance="@style/curved" />
+    <TextView
+        android:id="@+id/NameMV"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/Ten_bai_hat"
+        android:layout_toEndOf="@id/anhMV"
+        android:layout_toStartOf="@id/TimeMV"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/AlbumMV"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@id/TimeMV"
+        android:layout_toEndOf="@id/anhMV"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/album_bai_hat"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TimeMV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center"
+        android:text="@string/start_tv"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

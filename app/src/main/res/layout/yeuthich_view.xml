@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/anhBH_YT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/nhac"
+        app:shapeAppearance="@style/curved" />
+
+    <TextView
+        android:id="@+id/tenBH_YT"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/anhBH_YT"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/Ten_bai_hat"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tenCS_YT"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/anhBH_YT"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="@string/album_bai_hat"
+        android:textColor="@color/black"
+        android:textStyle="italic"/>
+</RelativeLayout>
